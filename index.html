@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf=8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
+    <title>Xaxis AdLabs | CREATE Q1 2019</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script type="text/javascript" src="./js/persona_data.json"></script>
+    <script type="text/javascript" src="./js/question_events.js"></script>
+  </head>
+  <body data-loading='true' data-nav-expanded='false'>
+    <!-- Styles, do not touch -->
+    <div class="styles"></div>
+
+    <!-- Container, do not touch -->
+    <div class="container_container">
+      <div class="container"></div>
+    </div>
+
+    <!-- Loading screen, GET WORKING -->
+<!--     <div class="loading">
+      <video class='loading__video' src='./assets/video/loading.mp4' autoplay loop muted playsinline></video>
+    </div> -->
+
+    <!-- Curtain, do not touch -->
+    <div class='curtain'>
+      <div class='curtain__table'>
+        <div class='curtain__content'>
+          <div class='curtain__copy'>
+            Please use a modern browser with JavaScript turned on to view this site
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Animation, do not touch -->
+    <div id="mku"></div>
+
+    <!-- Audio bg music, hidden -->
+    <iframe src="./assets/aud/silence.mp3" allow="autoplay" style="display: none;"></iframe>
+
+    <audio class="audio" autoplay loop style="display: none;">
+      <source id="audio_src" src="" type="audio/mpeg">
+      <p>If you can read this then you fail at internetting for using a browser that does not support audio elements.</p>
+    </audio>
+
+    <!-- Audio sfx, hidden -->
+    <audio class="sfx" style="display: none;">
+      <source id="sfx_src" src="" type="audio/mpeg">
+    </audio>
+
+    <!-- Scripts, do not touch -->
+    <script>
+      var isBrowser = function (name) {
+        switch (name.toLowerCase()) {
+          case 'opera':
+            return (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+          break;
+
+          case 'firefox':
+            return typeof InstallTrigger !== 'undefined';
+          break;
+
+          case 'safari':
+            return /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+          break;
+
+          case 'ie':
+            return /*@cc_on!@*/false || !!document.documentMode;
+          break;
+
+          case 'edge':
+            return isEdge = !isBrowser('ie') && !!window.StyleMedia;
+          break;
+
+          case 'chrome':
+            return !!window.chrome;
+          break;
+
+          case 'ios':
+            return !!navigator.userAgent.match(/iPhone|iPad|iPod/i);
+          break;
+
+          default:
+            throw 'Please pass the name of a known browser as a string parameter.';
+          break;
+        }
+      };
+
+      switch (true) {
+        case isBrowser('chrome'):
+        case isBrowser('firefox'):
+        case isBrowser('safari'):
+        case isBrowser('ios'):
+          document.querySelector('.curtain').style.display = 'none';
+        break;
+
+        default:
+          document.querySelector('.curtain').style.display = 'block';
+          document.querySelector('.curtain__copy').innerHTML = 'Please use a modern browser to view this site';
+        break;
+      }
+    </script>
+
+    <script src='./js/libs/bnmr.js'></script>
+    <script src='./js/main.js'></script>
+
+    <div class="scripts"></div>
+  </body>
+</html>

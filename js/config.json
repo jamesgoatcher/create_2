@@ -1,0 +1,192 @@
+{
+  "pages": {
+
+    "intro": {
+      "html": "./html/intro.html",
+      "styles": [
+        "./css/intro.css"
+      ],
+      "scripts": [
+        "./js/controllers/intro.js",
+        "./js/controllers/intro__question.js"
+      ],
+      "assets" : [
+        "./assets/aud/silence.mp3",
+        "./assets/aud/intro.mp3",
+        "./assets/aud/flicker.mp3",
+        "./assets/aud/tutorial.mp3",
+        "./assets/aud/personalization.mp3",
+        "./assets/aud/game_over.mp3",
+        "./assets/aud/questions__poof.mp3",
+        "./assets/aud/questions__action.mp3",
+        "./assets/aud/questions__rom.mp3",
+        "./assets/aud/questions__loud.mp3",
+        "./assets/aud/questions__chill.mp3",
+        "./assets/aud/questions__cats.mp3",
+        "./assets/aud/questions__dogs.mp3",
+        "./assets/aud/questions__escape.mp3",
+        "./assets/aud/questions__halloween.mp3",
+        "./assets/aud/questions__newyears.mp3",
+        "./assets/img/header__logo.png",
+        "./assets/img/header__arrow-left.png",
+        "./assets/img/header__arrow-right.png",
+        "./assets/img/intro__bg.png",
+        "./assets/img/player__init.png",
+        "./assets/img/player__init-left.png",
+        "./assets/img/player__init-right.png",
+        "./assets/img/taxi__init.png",
+        "./assets/img/taxi__player.png",
+        "./assets/img/content__article-img.png",
+        "./assets/img/content__adlabs_headshot-0.png",
+        "./assets/img/content__adlabs_headshot-1.png",
+        "./assets/img/content__adlabs_headshot-2.png",
+        "./assets/img/content__adlabs_headshot-3.png",
+        "./assets/img/content__adlabs_headshot-4.png",
+        "./assets/img/content__adlabs_headshot-5.png",
+        "./assets/img/content__adlabs_headshot-6.png",
+        "./assets/img/content__adlabs_headshot-7.png",
+        "./assets/img/content__adlabs_jgo.jpg",
+        "./assets/img/content__powerpoint.pdf",
+        "./assets/img/questions__backpack.png",
+        "./assets/img/questions__cats.png",
+        "./assets/img/questions__cabin.png",
+        "./assets/img/questions__concert.png",
+        "./assets/img/questions__dinein.png",
+        "./assets/img/questions__dogs.png",
+        "./assets/img/questions__music-anim.png",
+        "./assets/img/questions__music.png",
+        "./assets/img/questions__poof.png",
+        "./assets/img/questions__halloween.png",
+        "./assets/img/questions__halloween-anim.png",
+        "./assets/img/questions__rom-anim.png",
+        "./assets/img/questions__rom.png",
+        "./assets/img/questions__newyears.png",
+        "./assets/img/questions__newyears-anim.png",
+        "./assets/img/questions__takeout.png",
+        "./assets/vid/content__fyi.mp4"
+      ],
+      "data": {
+        "name": "intro"
+      }    
+    },
+
+    "jester": {
+      "html": "./html/jester.html",
+      "styles": [
+        "./css/jester.css"
+      ],
+      "scripts": [
+        "./js/controllers/jester.js"
+      ],
+      "assets" : [
+        "./assets/aud/jester.mp3",
+        "./assets/img/jester__bg-1.png",
+        "./assets/img/jester__bg-2.png",
+        "./assets/img/jester__bg-3.png",
+        "./assets/img/jester__bg-4.png",
+        "./assets/img/jester__box.png",
+        "./assets/img/jester__player.png",
+        "./assets/img/jester__player-worried.png"
+      ],
+      "data": {
+        "name": "jester"
+      }
+    },
+
+    "hero": {
+      "html": "./html/hero.html",
+      "styles": [
+        "./css/hero.css"
+      ],
+      "scripts": [
+        "./js/controllers/hero.js"
+      ],
+      "assets" : [
+        "./assets/aud/hero.mp3",
+        "./assets/img/hero__bg-1.png",
+        "./assets/img/hero__bg-2.png",
+        "./assets/img/hero__bg-3.png",
+        "./assets/img/hero__bg-4.png",
+        "./assets/img/hero__box.png",
+        "./assets/img/hero__badguy.png",
+        "./assets/img/hero__player.png",
+        "./assets/img/hero__player-shock.png"
+      ],
+      "data": {
+        "name": "hero"
+      }
+    },
+
+    "explorer": {
+      "html": "./html/explorer.html",
+      "styles": [
+        "./css/explorer.css"
+      ],
+      "scripts": [
+        "./js/controllers/explorer.js"
+      ],
+      "assets" : [
+        "./assets/aud/explorer.mp3",
+        "./assets/img/explorer__bg-1.png",
+        "./assets/img/explorer__bg-2.png",
+        "./assets/img/explorer__bg-3.png",
+        "./assets/img/explorer__bg-4.png",
+        "./assets/img/explorer__box.png",
+        "./assets/img/explorer__anubis.png",
+        "./assets/img/explorer__player.png",
+        "./assets/img/explorer__player-shock.png"
+      ],
+      "data": {
+        "name": "explorer"
+      }
+    },
+
+    "creator": {
+      "html": "./html/creator.html",
+      "styles": [
+        "./css/creator.css"
+      ],
+      "scripts": [
+        "./js/controllers/creator.js"
+      ],
+      "assets" : [
+        "./assets/aud/creator.mp3",
+        "./assets/img/creator__bg-1.png",
+        "./assets/img/creator__bg-2.png",
+        "./assets/img/creator__bg-3.png",
+        "./assets/img/creator__bg-4.png",
+        "./assets/img/creator__box.png",
+        "./assets/img/creator__badguy.png",
+        "./assets/img/creator__player.png",
+        "./assets/img/creator__player-mad.png"
+      ],
+      "data": {
+        "name": "creator"
+      }
+    },
+
+    "rebel": {
+      "html": "./html/rebel.html",
+      "styles": [
+        "./css/rebel.css"
+      ],
+      "scripts": [
+        "./js/controllers/rebel.js"
+      ],
+      "assets" : [
+        "./assets/aud/rebel.mp3",
+        "./assets/img/rebel__bg-1.png",
+        "./assets/img/rebel__bg-2.png",
+        "./assets/img/rebel__bg-3.png",
+        "./assets/img/rebel__bg-4.png",
+        "./assets/img/rebel__box.png",
+        "./assets/img/rebel__badguy.png",
+        "./assets/img/rebel__player.png",
+        "./assets/img/rebel__player-money.png"
+      ],
+      "data": {
+        "name": "rebel"
+      }
+    }
+  }
+}

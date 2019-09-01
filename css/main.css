@@ -1,0 +1,593 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/*=============================================>>>>>
+= Global Classes =
+===============================================>>>>>*/
+
+/* Title: Personalization */
+.h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 4vw;
+  letter-spacing: 0.2em;
+  line-height: 1.3;
+  text-transform: uppercase; 
+}
+
+/* Title: Create */
+.h2 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3vw;
+  letter-spacing: 0.3em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+/* Header: Restart, Menu, Sound Toggle */
+.h3 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5vw;
+  letter-spacing: 0.3em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+/* Intro: Questions, Answers */
+.h4 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.4vw;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+}
+
+/* Persona: Prompts */
+.p {
+  font-family: 'Press Start 2P', cursive;
+  font-size: calc(1vw + 1vh);
+  letter-spacing: 0.05em;
+  line-height: calc(2vw + 1vh);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hide {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+.show {
+  opacity: 1 !important;
+  pointer-events: initial !important;
+}
+
+.block {
+  display: block !important;
+}
+
+.none {
+  display: none !important;
+}
+
+.blink {
+    -webkit-animation: 2s linear infinite blink_effect;
+    animation: 2s linear infinite blink_effect;
+}
+
+/*= End of Global Text Classes =*/
+/*=============================================<<<<<*/
+
+
+
+/*=============================================>>>>>
+= HTML Tag Resets and Stylization =
+===============================================>>>>>*/
+
+/* FIREFOX SCROLLBAR REMOVAL ATTEMPTS */
+
+@-moz-document url-prefix() {
+  html,
+  body {
+    /* overflow: hidden !important; */
+  }
+}
+
+/* html { overflow: scroll; } */
+/*
+body {
+  overflow: -moz-scrollbars-none;
+  overflow-y: scroll;
+} */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  margin: 0;
+  background-color: #000;
+}
+
+body[data-loading=true],
+body[data-prevent-scroll=true] {
+  overflow: hidden;
+}
+
+body[data-prevent-scroll=false] {
+  overflow: auto;
+}
+
+body * {
+  font-family: 'Press Start 2P', cursive;
+  position: relative;
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+a {
+  color: #000;
+}
+
+/*= End of HTML Tag Resets and Stylization =*/
+/*=============================================<<<<<*/
+
+
+
+/*=============================================>>>>>
+= Main Page Blocks =
+===============================================>>>>>*/
+/*Top Layer*/
+.container_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+  /*Header*/
+  .header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+    .header__restart,
+    .header__logo,
+    .header__sound,
+    .header__menu,
+    .header__arrow-left,
+    .header__arrow-right {
+      position: absolute;
+      cursor: pointer;
+      color: #fff;
+    }
+
+    .header__restart {
+      top: 6vh;
+      left: 2vw;
+    }
+
+    .header__logo {
+      background-image: url('../assets/img/header__logo.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      top: 0px;
+      right: 2vw;
+      width: 90px;
+      height: 132px;
+    }
+
+    .header__sound {
+      bottom: 3vh;
+      right: 2vw;
+    }
+
+    .header__menu {
+      top: 6vh;
+      left: 2vw;
+    }
+
+    .header__arrow-left,
+    .header__arrow-right {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      top: 50%;
+      width: 3vw;
+      height: 4vw;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+
+    .header__arrow-left {
+      left: 1vw;
+      background-image: url('../assets/img/header__arrow-left.png');
+    }
+
+    .header__arrow-right {
+      right: 1vw;
+      background-image: url('../assets/img/header__arrow-right.png');
+    }
+
+  /*Menu*/
+  .menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    z-index: 30;
+  }
+
+    .menu > div {
+      padding-top: 6vh;
+      padding-left: 2vw;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-size: 1.5vw;
+      line-height: 1.3;
+      letter-spacing: 0.3em;
+    }
+
+    .menu__line {
+      opacity: 0;
+      -webkit-transform: translateX(-1vw);
+      transform: translateX(-1vw);
+      -webkit-transition: opacity 0.5s, transform 0.25s;
+      transition: opacity 0.5s, transform 0.25s;
+    } .menu__line.active {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    } .menu__line:hover {
+      -webkit-transform: translateX(1vw);
+      transform: translateX(1vw);
+    }
+
+    .menu > div:first-of-type {
+      padding-bottom: 5vh;
+      border-bottom: 2px solid #fff;
+    } .menu__line:first-of-type:hover {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      color: green;
+    }
+
+/*Main Layer*/
+  .container {
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+  }
+
+  /*Pages*/
+  .page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+  }
+
+  .page.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /*PAGE SWIPES*/
+  .page--intro {
+    -webkit-transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+  } .page--intro.slideOut {
+    -webkit-transform: translateX(100vw);
+    transform: translateX(100vw);
+  }
+
+  .page--rebel,
+  .page--explorer,
+  .page--creator,
+  .page--hero,
+  .page--jester {
+    display: none;
+    background-color: #000;
+    -webkit-transform: translateX(-100vw);
+    transform: translateX(-100vw);
+    -webkit-transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+  } .page--rebel.slideIn,
+    .page--explorer.slideIn,
+    .page--creator.slideIn,
+    .page--hero.slideIn,
+    .page--jester.slideIn {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+
+  /*Intro and Persona BGs*/
+  .persona__container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+    .page--intro,
+    .persona__frame {
+      background-repeat-y: no-repeat;
+      background-size: cover;
+      background-position: center;
+      z-index: 1;
+    }
+
+    .persona__frame {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      -webkit-transform: translateX(100vw);
+      transform: translateX(100vw);
+      -webkit-transition: transform 0.5s;
+      transition: transform 0.5s;
+    } .persona__frame.opac {
+      opacity: 1;
+    } .persona__frame.active {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    } .persona__frame.out {
+      opacity: 1;
+      -webkit-transform: translateX(-100vw);
+      transform: translateX(-100vw);
+    }
+
+    .page--intro {
+      background-image: url('../assets/img/intro__bg.png');
+    }
+
+    .persona__spacebar {
+      color: #fff;
+      visibility: hidden;
+      text-align: center;
+      white-space: nowrap;
+      position: absolute;
+      left: 2vw;
+      bottom: 3vh;
+      z-index: 1;
+    }
+
+    .game_over {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0,0,0,0.8);
+      color: #fff;
+      opacity: 1;
+      z-index: 2;
+    }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  pointer-events: none;
+  z-index: 10;
+}
+
+/*= End of Main Page Blocks =*/
+/*=============================================<<<<<*/
+
+
+/*=============================================>>>>>
+= Loading Screen = TBD!!!!
+===============================================>>>>>*/
+
+.loading {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+body[data-loading=false] .loading {
+  display: none;
+}
+
+  .loading__video {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+/*= End of Loading Screen =*/
+/*=============================================<<<<<*/
+
+
+/*=============================================>>>>>
+= Curtain for Wrong Browser or Window Size = TBD!!!
+===============================================>>>>>*/
+
+.curtain {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #222;
+  overflow-y: auto;
+  z-index: 9999;
+}
+
+  .curtain__table {
+    display: table;
+    width: 100%;
+    height: 100%;
+  }
+
+    .curtain__content {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+      .curtain__copy {
+        margin: 0 auto;
+        padding: 48px;
+        max-width: 960px;
+        color: #fff;
+        font-family: 'Tenor Sans', sans-serif;
+        font-size: 48px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+
+/*= End of Curtain for Wrong Browser or Window Size =*/
+/*=============================================<<<<<*/
+
+/* LOADING ANIMATION */
+.loading_page_div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 100000;
+}
+
+.pacman {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20vw;
+  height: 20vw;
+  transform: translate(-50%, -50%);
+}
+
+.pacman::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+  background: #fff;
+  transform: translate(0, -50%);
+  animation-direction: forwards;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-name: food;
+  animation-timing-function: linear;
+}
+
+@keyframes food { to { transform: translate(-300%, -50%); } }
+
+.pacman span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.pacman span::before,
+.pacman span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: #fff000;
+  animation-direction: alternate;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.pacman span::before {
+  top: 0;
+  border-top-left-radius: 999vh;
+  border-top-right-radius: 999vh;
+  animation-name: nomnom-top;
+  transform-origin: 50% 100%;
+}
+
+.pacman span::after {
+  top: 50%;
+  border-bottom-left-radius: 999vh;
+  border-bottom-right-radius: 999vh;
+  animation-name: nomnom-bottom;
+  transform-origin: 50% 0;
+}
+
+@keyframes nomnom-top { to { transform: rotate(-30deg); } }
+@keyframes nomnom-bottom { to { transform: rotate(30deg); } }
+
+
+/*=======================>>>>>
+= Animation Keyframes
+=========================>>>>>*/
+
+@-webkit-keyframes blink_effect {
+    0% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+@keyframes blink_effect {
+    0% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+/*= End of Animation Keyframes =*/
+/*===========================<<<<<*/

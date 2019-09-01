@@ -1,0 +1,93 @@
+<!-- Header, do not touch -->
+<div class="header">
+  <div class="header__menu h3">Menu</div>
+  <div class="header__logo"></div>
+  <div class="header__sound h3">Sound On</div>
+  <div class="header__arrow-left hide" data-arrow="left"></div>
+  <div class="header__arrow-right" data-arrow="right"></div>
+</div>
+
+<!-- Menu, do not touch -->
+<div class="menu hide">
+	<div class="menu__line">&lt; Menu</div>
+	<div class="menu__line" data-menuframe="1">&gt; Article</div>
+	<div class="menu__line" data-menuframe="2">&gt; FYI Video</div>
+	<div class="menu__line" data-menuframe="3">&gt; Meet the AdLabs</div>
+	<div class="menu__line" data-menuframe="4">&gt; Powerpoint</div>
+	<div class="menu__line" data-restartframe="true">&gt; Restart</div>
+</div>
+
+<!-- Frames, adjust DATA-CONTAINER (1), DATA-PERSONA (4), DATA-FRAME (4), and DATA-SCENE (8) -->
+<div class="persona__container" data-container="hero">
+	<!-- Frame - Article -->
+	<div class="persona__frame active" data-persona="hero" data-frame="1">
+		<div class="hero__prompt show">
+			<div class="p" data-scene="hero&scene_1-1"></div>
+		</div>
+		<div class="hero__article" data-content="hero&article">
+			<div></div>
+		</div>
+		<div class="hero__prompt">
+			<div class="p" data-scene="hero&scene_1-2"></div>
+		</div>
+
+		<div class="hero__sprite">
+			<div class="hero__sprite-main"></div>
+		</div>
+		<!-- Next Prompt, do not touch -->
+		<div class="persona__spacebar h3 blink">Press SPACE BAR to continue</div>
+	</div>
+	<!-- Frame - FYI -->
+	<div class="persona__frame" data-persona="hero" data-frame="2">
+		<div class="hero__prompt show">
+			<div class="p" data-scene="hero&scene_2-1"></div>
+		</div>
+		<div class="hero__fyi" data-content="hero&fyi"></div>
+		<div class="hero__prompt">
+			<div class="p" data-scene="hero&scene_2-2"></div>
+		</div>
+
+		<div class="hero__sprite large">
+			<div class="hero__sprite-shock"></div>
+		</div>
+		<!-- Next Prompt, do not touch -->
+		<div class="persona__spacebar h3 blink">Press SPACE BAR to continue</div>
+	</div>
+	<!-- Frame - AdLabs -->
+	<div class="persona__frame" data-persona="hero" data-frame="3">
+		<div class="hero__prompt show">
+			<div class="p" data-scene="hero&scene_3-1"></div>
+		</div>
+		<div class="hero__adlabs" data-content="hero&adlabs"></div>
+		<div class="hero__prompt">
+			<div class="p" data-scene="hero&scene_3-2"></div>
+		</div>
+
+		<div class="hero__sprite large">
+			<div class="hero__sprite-shock"></div>
+		</div>
+		<!-- Next Prompt, do not touch -->
+		<div class="persona__spacebar h3 blink">Press SPACE BAR to continue</div>
+	</div>
+	<!-- Frame - Powerpoint -->
+	<div class="persona__frame" data-persona="hero" data-frame="4">
+		<div class="hero__prompt show">
+			<div class="p" data-scene="hero&scene_4-1"></div>
+		</div>
+		<div class="hero__powerpoint" data-content="hero&powerpoint"></div>
+		<div class="hero__prompt">
+			<div class="p" data-scene="hero&scene_4-2"></div>
+		</div>
+
+		<div class="hero__sprite large">
+			<div class="hero__sprite-shock"></div>
+		</div>
+		<div class="hero__villain"></div>
+		<!-- Next Prompt, do not touch -->
+		<div class="persona__spacebar h3 blink">Press SPACE BAR to continue</div>
+	</div>
+	<!-- Game Over, do not touch -->
+	<div class="game_over h1 hide">
+		<div>Game Over</div>
+	</div>
+</div>

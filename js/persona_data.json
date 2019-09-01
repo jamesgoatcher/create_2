@@ -1,0 +1,217 @@
+let
+persona_data = {
+	"content_global" : {
+		"article" : {
+			"image_src" : "./assets/img/content__article-img.png",
+			"header" : "An Article On Personalization",
+			"subheader" : "by Jenna Brillhart",
+			"body" : "lorem	ipsum dolor sit amat, conse dfdf asdfk asdf sdfj sdf.  lorem	ipsum dolor sit amat, conse dfdf asdfk asdf sdfj sdf.  lorem	ipsum dolor sit amat, conse dfdf asdfk asdf sdfj sdf.  lorem	ipsum dolor sit amat, conse dfdf asdfk asdf sdfj sdf.  lorem	ipsum dolor sit amat, conse dfdf asdfk asdf sdfj sdf.  lorem	ipsum dolor sit amat, conse dfdf asdfk asdf sdfj sdf.  lorem	ipsum dolor sit amat, conse dfdf asdfk asdf sdfj sdf.  lorem	ipsum dolor sit amat, conse dfdf asdfk asdf sdfj sdf.  lorem	ipsum dolor sit amat, conse dfdf asdfk asdf sdfj sdf.  lorem	ipsum dolor sit amat, conse dfdf asdfk asdf sdfj sdf.  lorem	ipsum dolor sit amat, conse dfdf asdfk asdf sdfj sdf.  lorem	ipsum dolor sit amat, conse dfdf asdfk asdf sdfj sdf.  lorem	ipsum dolor sit amat, conse dfdf asdfk asdf sdfj sdf.  lorem	ipsum dolor sit amat, conse dfdf asdfk asdf sdfj sdf.  lorem	ipsum dolor sit amat, conse dfdf asdfk asdf sdfj sdf.  lorem	ipsum dolor sit amat, conse dfdf asdfk asdf sdfj sdf.  lorem	ipsum dolor sit amat, conse dfdf asdfk asdf sdfj sdf.  lorem	ipsum dolor sit amat, conse dfdf asdfk asdf sdfj sdf.  lorem	ipsum dolor sit amat, conse dfdf asdfk asdf sdfj sdf."
+		},
+
+		"fyi" : {
+			"video_src" : "./assets/vid/content__fyi.mp4"
+		},
+
+		"adlabs" : {
+			"header" : "AdLabs Characters",
+			"characters" : [
+				{
+					"name" : "Jenna Brillhart",
+					"thumb" : "./assets/img/content__adlabs_headshot-0.png",
+					"role"  : "designer",
+					"info" : {
+						"alias" : "J-Brill",
+						"title" : "Art Director",
+						"personality" : "INFJ",
+						"super_power" : "Invisible"
+					}
+				},
+				{
+					"name" : "Lisa Benmore",
+					"thumb" : "./assets/img/content__adlabs_headshot-1.png",
+					"role"  : "developer",
+					"info" : {
+						"alias" : "Leece",
+						"title" : "Ld. Developer",
+						"personality" : "INTP",
+						"super_power" : "Payload"
+					}
+				},
+				{
+					"name" : "Siobhan Cooney",
+					"thumb" : "./assets/img/content__adlabs_headshot-2.png",
+					"role"  : "producer",
+					"info" : {
+						"alias" : "Soybean",
+						"title" : "Snr. Producer",
+						"personality" : "INFJ",
+						"super_power" : "Pedialyte"
+					}
+				},
+				{
+					"name" : "Carly Klein",
+					"thumb" : "./assets/img/content__adlabs_headshot-3.png",
+					"role"  : "producer",
+					"info" : {
+						"alias" : "iCarly",
+						"title" : "idk",
+						"personality" : "ESFP",
+						"super_power" : "Wears beanies"
+					}
+				},
+				{
+					"name" : "Jeremy Ross",
+					"thumb" : "./assets/img/content__adlabs_headshot-4.png",
+					"role"  : "developer",
+					"info" : {
+						"alias" : "J.R.",
+						"title" : "Developer",
+						"personality" : "INFJ",
+						"super_power" : "Duplication"
+					}
+				},
+				{
+					"name" : "Sam Khavari",
+					"thumb" : "./assets/img/content__adlabs_headshot-5.png",
+					"role"  : "producer",
+					"info" : {
+						"alias" : "Samren",
+						"title" : "Producer",
+						"personality" : "????",
+						"super_power" : "Weather-proof"
+					}
+				},
+				{
+					"name" : "Raquel Fendel",
+					"thumb" : "./assets/img/content__adlabs_headshot-6.png",
+					"role"  : "designer",
+					"info" : {
+						"alias" : "Fender",
+						"title" : "Designer",
+						"personality" : "INTJ",
+						"super_power" : "Hoosier"
+					}
+				},
+				{
+					"name" : "Pete LaMalfa",
+					"thumb" : "./assets/img/content__adlabs_headshot-7.png",
+					"role"  : "developer",
+					"info" : {
+						"alias" : "Peetrick",
+						"title" : "Developer",
+						"personality" : "ENFP",
+						"super_power" : "Screen-share"
+					}
+				},
+			],
+			"secret" : {
+				"name" : "James Goatcher",
+				"thumb" : "./assets/img/content__adlabs_jgo.jpg",
+				"role"  : "developer",
+				"info" : {
+					"title" : "Developer",
+					"tenure" : "2016 - 2019",
+					"personality" : "ENTJ",
+					"super_power" : "Loud AF"
+				}
+			}
+		},
+
+		"powerpoint" : {
+			"content" : "./assets/img/content__powerpoint.pdf"
+		}
+	},
+
+	"content_persona" : {
+		"rebel" : {
+			"scenes" : {
+				"scene_1-1" : "Greetings, REBEL!<span>You rebel, you.  From your answers we&rsquo;ve determined you challenge the status quo and march to the beat of your own drum, even if that means breaking a rule or two.  You aren&rsquo; afriad to be an individual or to take risks.  So go, break some rules.</span>",
+				"scene_1-2" : "GO!",
+				"scene_2-1" : "Looks like you&rsquo;ve arrived in town...",
+				"scene_2-2" : "A strange idea comes to your head.  If these people left in such a hurry, you reckon they might have left a few things behind at the bank...",
+				"scene_3-1" : "You can&rsquo;t believe all of these riches have been left behind.  Surely they won&rsquo;t notice if one bag is missing?",
+				"scene_3-2" : "You quickly snag the lightest bag that will be easy to travel with.  You hope since you took a small one, no one will notice.  You quickly exit the bank.",
+				"scene_4-1" : "&ldquo;Hold it there, partner!&rdquo;",
+				"scene_4-2" : "There&rsquo;s a new sheriff in town and I reckon these parts don&rsquo;t fancy havin&rsquo; you around anymore.  Maybe the old sheriff would have put up with your city slickin&rsquo; ways, but not on my watch."
+			},
+			"booleans" : {
+				"frame_1" : false,
+				"frame_2" : false,
+				"frame_3" : false,
+				"frame_4" : false
+			}
+		},
+		"explorer" : {
+			"scenes" : {
+				"scene_1-1" : "Greetings, EXPLORER!  We can tell you seek new experiences above all else and are always up for anything.  You are pioneering, independent and brave.  You have an explorative nature and love discovering the unknown.  <span>Start unearthing.</span>",
+				"scene_1-2" : "A hidden passageway has been discovered within the pyramid.  The tunnel&rsquo;s hieroglyphics describe riches and treasures that await as you journey deeper into the corridor.  <span>Continue your journey</span>",
+				"scene_2-1" : "The excavation site looks abandoned.  This troubles you.  With all of the untold treasures to discover, why weren‘t more people here to claim it for themselves?",
+				"scene_2-2" : "You get a closer look at the hieroglyphics and realize this isn&rsquo;t just someone&rsquo;s hidden treasure spot.  This is the burial site to an ancient, powerful ruler.  Something tells you he wouldn&rsquo;t be too happy with you entering his tomb uninvited.  You continue anyway.",
+				"scene_3-1" : "You venture into the corridor and find a gold-filled room.  You can&rsquo;t believe your eyes.  This must be the emperor&rsquo;s hidden treasure.  He went through an awfully lot of trouble to keep this place a secret.",
+				"scene_3-2" : "You see a door in the distance and wonder if there are more treasures and artifacts for you to discover.  <span>You read the hieroglyphics above the door, &ldquo;He who shall enter will experience the fate of the one before.&rdquo;  You enter anyways, this was probably just an ancient warning to ward off superstitious thieves.",
+				"scene_4-1" : "You manage to open the doors to the secret room.  You are startled to find the room is actually a tomb and houses the mummified body of the ancient ruler, COI-teph.  You look to see what his coffin&rsquo;s hieroglyphics reveal.",
+				"scene_4-2" : "Sometimes you explore more than you should.  This tomb is cursed and those who enter must join those that have never left.  Anubis, the God of Death and Embalming will see you now."
+			},
+			"booleans" : {
+				"frame_1" : false,
+				"frame_2" : false,
+				"frame_3" : false,
+				"frame_4" : false
+			}
+		},
+		"creator" : {
+			"scenes" : {
+				"scene_1-1" : "Greetings, CREATOR!  We think you&rsquo;ve got the spark.  Your answers indicated you think outside of the box and bring ideas to life.  You&rsquo;re an artist, a maker, an inventor - you&rsquo;re the Creator.  Now, let&rsquo;s get those creative juices flowing.",
+				"scene_1-2" : "New things await...",
+				"scene_2-1" : "You have arrived at the emperor&rsquo;s grounds.",
+				"scene_2-2" : "You learn the emperor is seeking someone to design his garden.  Your experience in ornamental horticulture excels above others.  This would be a huge honor and a way for all the cities elite to see your work when they come to his palace.",
+				"scene_3-1" : "You see the emperor&rsquo;s garden has very little to work with.  This worries you that the task is too great.  But being the Creator that you are, you know you can design the right elements to make this garden come alive!",
+				"scene_3-2" : "Off to work!",
+				"scene_4-1" : "Interesting...",
+				"scene_4-2" : "We&rsquo;re not all creative geniuses.  You have failed to impress the emperor with a Godlike garden.  Everyone knows a marbal statue is more prized than bronze."
+			},
+			"booleans" : {
+				"frame_1" : false,
+				"frame_2" : false,
+				"frame_3" : false,
+				"frame_4" : false
+			}
+		},
+		"hero" : {
+			"scenes" : {
+				"scene_1-1" : "Greetings, HERO!  Not all heroes wear capes, but your friends might think you secretly do.  You always think of the group first and put others before yourself.  You are a team player and do what is right.  <span>So go, pay it forward.</span>",
+				"scene_1-2" : "Your coworker has been abducted by the evil space alien, Zaander.  You know what you must do; follow him to his home planet, Nebulite, 13 billion light years away.  You can only hope you get there in time.  <span>Go save them from intergalactic demise.</span>",
+				"scene_2-1" : "You land on planet Nebulite after narrowly avoiding a massive black hole, a supernova, and several thousand meteor showers.",
+				"scene_2-2" : "You see no sign of evil Zaander or your captive coworker.  The planet&rsquo;s gaseous fumes are concerning you greatly.  You will survive the poison, but will your mere mortal coworker?  <span>You continue searching.</span>",
+				"scene_3-1" : "You venture further into the red gaseous abyss.  You still see no trace of your coworker, but you hear screams in the distance.  You must hurry if you hope to rescue them in time.",
+				"scene_3-2" : "The evil Zaander appears before you.  He agrees to take you to your coworker if you swear to never enter 0&rsquo;s again.  <span>You reflect on this offer, a tough decision has to be made, you love 0&rsquo;s.  However, you decide saving them from intergalactic demise outweights the cost of the 0&rsquo;s.</span>",
+				"scene_4-1" : "Zaander has tricked you.  He lead you to your friend but he is inches away from imminent peril.  <span>Download the next piece of content to save them.</span>",
+				"scene_4-2" : "Zaander has tricked you and your coworker has perished.  We can&rsquo;t all be a hero.  You failed to save your fellow coworker from intergalactic isolation and ultimate demise."
+			},
+			"booleans" : {
+				"frame_1" : false,
+				"frame_2" : false,
+				"frame_3" : false,
+				"frame_4" : false
+			}
+		},
+		"jester" : {
+			"scenes" : {
+				"scene_1-1" : "Greetings, JESTER!  We has&rsquo;t a jester on our hands.  You my friend love to maketh people chuckle and has&rsquo;t a valous time.  Thee don&rsquo;t mind taking cent&rsquo;r stage if&rsquo;t be true to means ent&rsquo;rtaining with thy wit and humor.",
+				"scene_1-2" : "Alloweth the showeth beginneth!",
+				"scene_2-1" : "But soft!  Ye heareth?",
+				"scene_2-2" : "Thee heareth the king is throwing a banquet to bray out the nuptials of his youngest daught&rsquo;r.  The party is rath&rsquo;r dull and the king wouldst liketh to beest amus&rsquo;d.",
+				"scene_3-1" : "Hark!  Ye hasth arrived.",
+				"scene_3-2" : "Thee arriveth at the banquet hall and seeth remnants of a joyous gath&rsquo;ring.  All of the party memb&rsquo;rs wilt has&rsquo;t too much wine, since none can beest hath found.  Thee taketh w&rsquo;rd the king still expects thy ent&rsquo;rtainment.  Thee continueth to the high court to meeteth the king.",
+				"scene_4-1" : "Mirth and merryment around!",
+				"scene_4-2" : "It&rsquo;s all excit&rsquo;ment and games until the king throws thee into the dungeon f&rsquo;r not making that gent chuckle.  We cannot all beest the comical guy."
+			},
+			"booleans" : {
+				"frame_1" : false,
+				"frame_2" : false,
+				"frame_3" : false,
+				"frame_4" : false
+			}
+		}
+	}
+};
